@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <section class="subheader">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="nav-link">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h2>About Us</h2>
+    </section>
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor nemo nostrum officia alias, 
+                    aspernatur,facilis labore rerum delectus ab eligendi tenetur quas. Ratione porro aut eos mollitia, 
+                    quo quibusdam dolorum.
+                </p>
+                <a href="" class="btn-cta red-btn">Explore Now</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam amet illum eum perspiciatis ipsa nemo accusamus quaerat? Quasi quidem, blanditiis ipsam, <br> 
+            recusandae tempore, accusantium hic dolorem obcaecati quo quae soluta.
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by SMHB</p>
+    </section>
+    <!-- JavaScript for toggle menu -->
+
+    <script>
+
+        var navLinks = document.getElementById('nav-link');
+        
+        function showMenu(){
+            navLinks.style.right = '0px';
+            navLinks.style.transition = '1s';
+        }
+
+        function hideMenu(){
+            navLinks.style.right = '-200px';
+        }
+    </script>
+</body>
+</html>
